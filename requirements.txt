@@ -1,4 +1,0 @@
-numpy
-pyradiomics
-pandas
-pyqt5
