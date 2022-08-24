@@ -21,6 +21,7 @@ or CONDA equivalent
 
 ## Step 5. Generate links
 `python dbnav.py`
+Choose folder containing data when prompted
 
 ## Step 6. Run batch feature extraction
 `pyradiomics database.csv -o output.csv -f csv -p config.yaml`
