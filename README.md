@@ -19,8 +19,14 @@ or CONDA equivalent
 `pip install numpy`
 `pip install -e .`
 
-## Step 5. 
+## Step 5. Generate links
+`python dbnav.py`
+
+## Step 6. Run batch feature extraction
+`pyradiomics database.csv -o output.csv -f csv -p config.yaml`
+
 
 ### Resources
 [Pyradiomics Documentation](https://pyradiomics.readthedocs.io/en/latest/)
 [Pyradiomics Github](https://github.com/AIM-Harvard/pyradiomics)
+
