@@ -1,9 +1,9 @@
 from setuptools import setup
 
-setup(name='pyradiomicsGUI',
+setup(name='pyradiomicsBatch',
       version='0.1.0',
-      url='https://github.ic.ac.uk/cancer-imaging-group/User_interface_2_run_pyradiomics',
-      author='Xingfeng Li, Mitch Chen',
+      url='https://github.com/scat2801/pyradiomicsBatch/',
+      author='M Chen',
       install_requires=[
      	    "numpy",
      	    "pandas",
