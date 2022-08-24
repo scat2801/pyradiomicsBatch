@@ -1,0 +1,4 @@
+ID,Image,Mask
+49,./49\49.nii.gz,./49\49_mask.nii.gz
+53,./53\53.nii.gz,./53\53_mask.nii.gz
+56,./56\56.nii.gz,./56\56_mask.nii.gz
