@@ -7,7 +7,6 @@ setup(name='pyradiomicsBatch',
       install_requires=[
      	    "numpy",
      	    "pandas",
- 	    "pyqt5",
 	    "pyradiomics",
       ],
       entry_points={
