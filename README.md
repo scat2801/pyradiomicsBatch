@@ -5,16 +5,17 @@ batch processing files using Pyradiomics
 
 ## Step 1. Create virtual environment
 `virtualenv pyradiomicsBatch --python=python3.9` <br />
-or CONDA equivalent
+or CONDA equivalent <br />
 
 If error message: RuntimeError: failed to find interpreter for Builtin discover of python_spec='python3.9'
-Then follow these steps install python 3.9
-A. `sudo apt update`
-B. `sudo apt install software-properties-common`
-C. `sudo add-apt-repository ppa:deadsnakes/ppa`
-D. `sudo apt install python3.9`
+Then follow these steps install python 3.9 <br />
+A. `sudo apt update` <br />
+B. `sudo apt install software-properties-common` <br />
+C. `sudo add-apt-repository ppa:deadsnakes/ppa` <br />
+D. `sudo apt install python3.9` <br />
 
-Check Python version using `python3.9 --version`
+Check Python version using `python3.9 --version` <br />
+<br />
 
 ## Step 2. Activate environment
 `source ./pyradiomicsBatch/bin/activate` <br />
@@ -26,9 +27,9 @@ or CONDA equivalent
 ## Step 4. Pip dependencies
 `cd pyradiomicsBatch` <br />
 `pip install numpy` <br />
-`pip install -e .`
+`pip install -e .` <br />
 
-If error message ModuleNotFoundError: No module named 'distutils.cmd'
+If error message ModuleNotFoundError: No module named 'distutils.cmd' <br />
 Then run `sudo apt install python3.9-distutils`
 
 ## Step 5. Generate links
