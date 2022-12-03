@@ -7,7 +7,7 @@ batch processing files using Pyradiomics
 `virtualenv pyradiomicsBatch --python=python3.9` <br />
 or CONDA equivalent <br />
 
-If error message: RuntimeError: failed to find interpreter for Builtin discover of python_spec='python3.9'
+If error message: RuntimeError: failed to find interpreter for Builtin discover of python_spec='python3.9' <br />
 Then follow these steps install python 3.9 <br />
 A. `sudo apt update` <br />
 B. `sudo apt install software-properties-common` <br />
