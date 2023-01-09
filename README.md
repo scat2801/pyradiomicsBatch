@@ -40,6 +40,9 @@ Then run `sudo apt install python3.7-distutils`
 `python dbnav.py` <br />
 Choose folder containing data when prompted
 
+If error message ModuleNotFoundError: No module named 'Tkinter' <br />
+Then run `sudo apt-get install python3.7-tk`
+
 ## Step 6. Run batch feature extraction
 `pyradiomics database.csv -o output.csv -f csv -p config.yaml` <br />
 
