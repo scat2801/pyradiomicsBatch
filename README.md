@@ -4,6 +4,9 @@
 batch processing files using Pyradiomics 
 
 ## Step 1. Create virtual environment
+`mkdir envs` <br />
+`cd envs` <br />
+
 `virtualenv pyradiomicsBatch --python=python3.9` <br />
 or CONDA equivalent <br />
 
@@ -22,7 +25,8 @@ Check Python version using `python3.9 --version` <br />
 or CONDA equivalent
 
 ## Step 3. Clone directory
-`git clone https://github.com/scat2801/pyradiomicsBatch.git` 
+`cd ..` <br />
+`git clone https://github.com/scat2801/pyradiomicsBatch.git` <br />
 
 ## Step 4. Pip dependencies
 `cd pyradiomicsBatch` <br />
