@@ -46,6 +46,17 @@ Then run `sudo apt-get install python3.7-tk`
 ## Step 6. Run batch feature extraction
 `pyradiomics database.csv -o output.csv -f csv -p config.yaml` <br />
 
+If Error loading C extensions
+Then can try to install from source rather than pip:
+A. deactivate source <br />
+B. delete virtualenv folder, recreate and reactivate new virtualenv as in Step 1 <br />
+C. `git clone https://github.com/Radiomics/pyradiomics` <br />
+D. `cd pyradiomics` <br />
+E. `python -m pip install -r requirements.txt` <br />
+F. `python setup.py install` <br /> If giving errors such as Python.h not found, then use: `sudo apt install libpython3.7-dev` <br />
+G. `python setup.py build_ext --inplace` <br />
+F. Return to Step 6 and re-run (No need to regenerate links csv)
+
 The radiomics features (all classes) are saved in one .csv spreadsheet <br />
 ## Next step: Upload via AIDE
 
