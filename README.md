@@ -49,7 +49,7 @@ Check database.csv is correct
 `pyradiomics database.csv -o output.csv -f csv -p config.yaml` <br />
 
 If error loading C extensions
-Then can try to install from source rather than pip: <br />
+Then can try installing from source rather than pip: <br />
 A. deactivate source <br />
 B. delete virtualenv folder, recreate and reactivate new virtualenv as in Step 1 <br />
 C. `git clone https://github.com/Radiomics/pyradiomics` <br />
