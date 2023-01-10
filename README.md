@@ -47,7 +47,7 @@ Then run `sudo apt-get install python3.7-tk`
 `pyradiomics database.csv -o output.csv -f csv -p config.yaml` <br />
 
 If Error loading C extensions
-Then can try to install from source rather than pip:
+Then can try to install from source rather than pip: <br />
 A. deactivate source <br />
 B. delete virtualenv folder, recreate and reactivate new virtualenv as in Step 1 <br />
 C. `git clone https://github.com/Radiomics/pyradiomics` <br />
