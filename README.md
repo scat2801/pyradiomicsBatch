@@ -38,15 +38,17 @@ Then run `sudo apt install python3.7-distutils`
 
 ## Step 5. Generate links
 `python dbnav.py` <br />
-Choose folder containing data when prompted
+Choose folder containing data when prompted. <br />
 
 If error message ModuleNotFoundError: No module named 'Tkinter' <br />
-Then run `sudo apt-get install python3.7-tk`
+Then run `sudo apt-get install python3.7-tk` <br />
+
+Check database.csv is correct
 
 ## Step 6. Run batch feature extraction
 `pyradiomics database.csv -o output.csv -f csv -p config.yaml` <br />
 
-If Error loading C extensions
+If error loading C extensions
 Then can try to install from source rather than pip: <br />
 A. deactivate source <br />
 B. delete virtualenv folder, recreate and reactivate new virtualenv as in Step 1 <br />
