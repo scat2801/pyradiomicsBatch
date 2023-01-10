@@ -1,6 +1,6 @@
 # pyradiomicsBatch
 
-#### One-stop preprossing, normalisation and feature extraction pipeline
+#### One-stop preprocessing, normalisation and feature extraction pipeline
 batch processing files using Pyradiomics 
 
 ## Step 1. Create virtual environment
