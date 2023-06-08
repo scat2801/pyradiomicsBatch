@@ -29,21 +29,23 @@ def folderNav(folder_path):
         file_name = list(file_list)
         col_two = ''
         col_three = ''
-        
+        max_file_id = 0;
+
         for j in range(len(file_list)):
             file_name[j] = file_list[j].split('.nii')[0]
             fileSizeIter = os.path.getsize(subfolders[i] + os.sep + file_list[j])
             if (fileSizeIter > maxMaskFileSize):
                 maxMaskFileSize = fileSizeIter
+                max_file_id = j
             if 'nii' in file_list[j]:
                 if 'nii.gz' not in file_list[j]:
                     print ("All files need to be in .nii.gz format, please check case", file_list[j])
 
         for j in range(len(file_list)):
             if 'nii' in file_list[j]:
-                if (maxMaskFileSize == os.path.getsize(subfolders[i] + os.sep + file_list[j])):
+                if (j == max_file_id):
                     col_two = folder_path + os.sep + sf_cleaned[i] + os.sep + file_list[j]
-                    j = len(file_list) + 1
+                    #j = len(file_list) + 1
                 else:
                     col_three = folder_path + os.sep + sf_cleaned[i] + os.sep + file_list[j]
                     row = [sf_cleaned[i], col_two, col_three]
