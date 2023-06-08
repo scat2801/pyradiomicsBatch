@@ -40,6 +40,20 @@ Then run `sudo apt install python3.7-distutils`
 `python dbnav.py` <br />
 Choose folder containing data when prompted. <br />
 
+    DataFolder/
+    ├── Dataset001/
+        ├── Raw_image.nii.gz
+        ├── Mask_1.nii.gz
+        ├── Mask_2.nii.gz
+        ├── ...
+    ├── Dataset002
+    ├── Dataset003
+    ├── Dataset004
+    ├── Dataset005
+    ├── ...
+
+Make sure all nifti are in .gz compressed format so that he largest nii.gz in each folder is the raw image <br />
+
 If error message ModuleNotFoundError: No module named 'Tkinter' <br />
 Then run `sudo apt-get install python3.7-tk` <br />
 
