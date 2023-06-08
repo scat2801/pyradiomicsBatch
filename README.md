@@ -38,7 +38,7 @@ Then run `sudo apt install python3.7-distutils`
 
 ## Step 5. Generate links
 `python dbnav.py` <br />
-Data folder structure as below (Choose DataFolder when prompted) <br />
+Data folder structure as below (choose DataFolder when prompted) <br />
 
     DataFolder/
     ├── Dataset001/
