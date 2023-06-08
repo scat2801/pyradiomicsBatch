@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog
-
-import os, sys, glob, csv
+import os, csv
 
 def locateFolder():
     root = tk.Tk()
@@ -11,7 +10,6 @@ def locateFolder():
     return folder_path
 
 def folderNav(folder_path):
-    #csv_path = folder_path + os.sep + 'database.csv'
     csv_path = os.getcwd() + os.sep + 'database.csv'
     f = open (csv_path, 'w')
     writer = csv.writer(f)
@@ -31,6 +29,8 @@ def folderNav(folder_path):
         col_three = ''
         max_file_id = 0;
 
+        print(file_list)
+
         for j in range(len(file_list)):
             file_name[j] = file_list[j].split('.nii')[0]
             fileSizeIter = os.path.getsize(subfolders[i] + os.sep + file_list[j])
@@ -43,17 +43,16 @@ def folderNav(folder_path):
 
         for j in range(len(file_list)):
             if 'nii' in file_list[j]:
-                print ("max_file_id", max_file_id)
-                print ("current_id", j)
                 if (j == max_file_id):
                     col_two = folder_path + os.sep + sf_cleaned[i] + os.sep + file_list[j]
-                    print (col_two)
-                    #j = len(file_list) + 1
-                else:
+                    break
+
+        for j in range(len(file_list)):
+            if 'nii' in file_list[j]:
+                if (j != max_file_id):
                     col_three = folder_path + os.sep + sf_cleaned[i] + os.sep + file_list[j]
                     row = [sf_cleaned[i], col_two, col_three]
                     writer.writerow(row)
-
     f.close()
 
 if __name__ == "__main__":
