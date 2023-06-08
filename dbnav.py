@@ -43,35 +43,16 @@ def folderNav(folder_path):
 
         for j in range(len(file_list)):
             if 'nii' in file_list[j]:
+                print ("max_file_id", max_file_id)
+                print ("current_id", j)
                 if (j == max_file_id):
                     col_two = folder_path + os.sep + sf_cleaned[i] + os.sep + file_list[j]
+                    print (col_two)
                     #j = len(file_list) + 1
                 else:
                     col_three = folder_path + os.sep + sf_cleaned[i] + os.sep + file_list[j]
                     row = [sf_cleaned[i], col_two, col_three]
                     writer.writerow(row)
-                    col_three = ''
-
-                '''    
-                if file_name[j] == min(file_name, key=len):
-                    if maxMaskFileSize >  os.path.getsize(subfolders[i] + os.sep + file_list[j]):
-                        sys.exit('Inconsistent file size, largest file needs to be the data, check scan ID:' + sf_cleaned[i])
-                    else:
-                        #col_two = './' + sf_cleaned[i] + os.sep + file_list[j]
-                        col_two = folder_path + os.sep + sf_cleaned[i] + os.sep + file_list[j]
-                        j = len(file_list) + 1
-                
-
-        for j in range(len(file_list)):
-            if 'nii' in file_list[j]:
-                if file_name[j] != min(file_name, key=len):
-                    maxMaskFileSize = os.path.getsize(subfolders[i] + os.sep + file_list[j])
-                    #col_three = './' + sf_cleaned[i] + os.sep + file_list[j]
-                    col_three = folder_path + os.sep + sf_cleaned[i] + os.sep + file_list[j]
-                    row = [sf_cleaned[i], col_two, col_three]
-                    writer.writerow(row)
-                    col_three = ''
-                    '''
 
     f.close()
 
