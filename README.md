@@ -11,7 +11,7 @@ batch processing files using Pyradiomics
 or CONDA equivalent <br />
 
 If error message: RuntimeError: failed to find interpreter for Builtin discover of python_spec='python3.9' <br />
-Then follow these steps install python 3.7 <br />
+Then follow these steps to install python 3.7 <br />
 A. `sudo apt update` <br />
 B. `sudo apt install software-properties-common` <br />
 C. `sudo add-apt-repository ppa:deadsnakes/ppa` <br />
