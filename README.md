@@ -77,6 +77,6 @@ The radiomics features (all classes) are saved in one .csv spreadsheet <br />
 
 ### Resources
 [Pyradiomics Documentation](https://pyradiomics.readthedocs.io/en/latest/) <br />
-[Pyradiomics Github](https://github.com/AIM-Harvard/pyradiomics)
+[Pyradiomics Github](https://github.com/AIM-Harvard/pyradiomics) <br />
 [Kaggle Worksheet](https://www.kaggle.com/code/mitchchen/msc-precision-medicine-lung-cancer-radiomics)
 
