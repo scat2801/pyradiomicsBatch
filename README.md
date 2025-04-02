@@ -69,7 +69,7 @@ B. delete virtualenv folder, recreate and reactivate new virtualenv as in Step 1
 C. `git clone https://github.com/Radiomics/pyradiomics` <br />
 D. `cd pyradiomics` <br />
 E. `python -m pip install -r requirements.txt` <br />
-F. `python setup.py install` <br /> If giving error `Python.h not found`, then `sudo apt install libpython3.7-dev` <br />
+F. `python setup.py install` <br /> If giving error `Python.h not found`, then `sudo apt install libpython3.10-dev` <br />
 G. `python setup.py build_ext --inplace` <br />
 F. Return to Step 6 and re-run (No need to regenerate links csv)
 
